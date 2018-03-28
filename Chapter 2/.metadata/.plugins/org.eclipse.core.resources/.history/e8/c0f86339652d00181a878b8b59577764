@@ -1,0 +1,11 @@
+
+public class batterUp {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Batting Average Calculator");
+		
+		
+
+	}
+
+}

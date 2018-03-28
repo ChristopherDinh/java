@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class batterUp {
+	private static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Batting Average Calculator");
+
+		String choice = "y";
+		while (choice.equalsIgnoreCase("y")) {
+
+			int bats = Console.getInt("Enter number of times at bat: ", 1, 30);
+			System.out.println("0 = out, 1 = single, 2 = double, 3 = triple, 4 = hommeeeerrrrr");
+
+			int[] player = new int[bats];
+
+			double average = 0;
+			int counter = 0;
+			int results = 0;
+			double slugg = 0;
+			for (int i = 0; i < bats; i++) {
+				results = Console.getInt("Result for at bat " + (i + 1) + " :", 0, 4);
+				if (results > 0) {
+					counter += 1;
+				} else {
+					counter += 0;
+				}
+				results += results;
+				average = (double) counter / (double) bats;
+				slugg = (double) results / (double) bats;
+			}	
+				System.out.println(average);
+				System.out.println(slugg);
+			
+
+			choice = (Console.getString("Would you like to continue? (y/n)", true));
+		}
+	}
+
+}

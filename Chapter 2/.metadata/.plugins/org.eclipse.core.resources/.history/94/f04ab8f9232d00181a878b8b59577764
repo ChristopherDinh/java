@@ -1,0 +1,28 @@
+
+public class Account implements Balanceable, Withdrawable, Depositable {
+
+	@Override
+	public void deposit(double amount) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public double getBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setBalance() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

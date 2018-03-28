@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class project5_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		displayWelcome();
+		Scanner sc = new Scanner(System.in);
+		
+	
+		
+	}
+
+	private static void displayWelcome () {
+		System.out.println("Dice Roller");
+		System.out.println("Roll the dice? (y/n):");
+		String choice = sc.nextLine();
+		System.out.println();
+	}
+	public static int getRandomInt() {
+		int die1, die2 =  (int) (Math.random() * 6) + 1;
+		int total = die1 + die2;
+	}
+}

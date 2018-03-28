@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class PersonManger {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Person Manager");
+		System.out.println();
+		
+		Scanner sc = new Scanner(System.in);
+		String choice = "y";
+		while (choice.equalsIgnoreCase("y")) {
+
+			String ec = Console.getString("Create customer or employee? (c/e): ", "c", "e");
+			System.out.println();
+
+			String first = Console.getString("First Name: ", true);
+			String last = Console.getString("Last Name: ", true);
+
+			Person p = null;
+
+			if (ec.equalsIgnoreCase("c")) {
+				String number = Console.getString("Customer Number: ", true);
+				p = new Customer(first, last, number);
+				System.out.println(p.toString());
+			} else {
+				String ssn = Console.getString("SSN:", true);
+				p = new Employee(first, last, ssn);
+				System.out.println(p.toString());
+
+			}
+		choice = (Console.getString("Would you like to continue? (y/n)", true));
+		sc.nextLine();
+		}
+		sc.close();
+	}
+}

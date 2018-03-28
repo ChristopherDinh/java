@@ -1,0 +1,13 @@
+package demo;
+
+public class BallArrayDemo {
+
+	public static void main(String[] args) {
+	System.out.println("Hello");
+	
+	Ball[] binOfBalls = new Ball[7];
+	
+
+	}
+
+}

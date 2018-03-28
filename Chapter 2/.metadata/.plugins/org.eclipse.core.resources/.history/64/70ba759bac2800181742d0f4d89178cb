@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class project5_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		displayWelcome();
+		Scanner sc = new Scanner(System.in);
+		String choice = uhh(sc, "Roll the dice? (y/n)");
+		
+		while (choice.equalsIgnoreCase("y")) {
+			int die1 = getRandomInt();
+			int die2 = getRandomInt();
+			dice(die1, die2);
+			choice = uhh(sc,"Roll the dice again? (y/n)");
+		}
+		
+	
+		
+	}
+
+	private static void displayWelcome () {
+		System.out.println("Dice Roller \n");
+		return sc.next();
+	}
+	private static String uhh (Scanner sc, String a) {
+		System.out.print(a);
+		sc.nextLine();
+	}
+	private static int getRandomInt() {
+		return (int) (Math.random() * 6) + 1;
+	}
+	private static void dice (int die1, int die2) {
+		int total = die1 + die2;
+		System.out.println("First Die " +die1);
+		System.out.println("Second Die "+die2);
+		System.out.println("Total "+total);
+	}
+}

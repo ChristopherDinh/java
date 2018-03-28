@@ -1,0 +1,39 @@
+package demo;
+
+public class ball {
+	
+	private int id;
+	private String color;
+	private String size;
+	public ball(int id, String color, String size) {
+		super();
+		this.id = id;
+		this.color = color;
+		this.size = size;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getSize() {
+		return size;
+	}
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	@Override
+	public String toString() {
+		return "ball [id =" + id + ", color=" + color + ", size=" + size + "]";
+	}
+	
+}
+

@@ -1,0 +1,26 @@
+
+public class batterUp {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Batting Average Calculator");
+		
+		String choice = "y";
+		while (choice.equalsIgnoreCase("y")) {
+			
+			double bats = Console.getInt("Enter number of times at bat", 1, 30);
+			double results = Console.getInt("Result for at-bat", 0, 4);
+			System.out.println("0 = out, 1 = single, 2 = double, 3 = triple, 4 = hommeeeerrrrr");
+		
+			double [][] player = new double [(int) bats][(int) results];
+			double sum = 0;
+			for (int i = 0; i < bats; i++) {
+				System.out.println(player[i]);
+			}
+			
+		}
+	
+
+		}
+	
+
+}
